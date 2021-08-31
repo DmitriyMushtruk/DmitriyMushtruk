@@ -1,5 +1,7 @@
 # PULSE
-Project Pulse
-Author Dmitriy Mushtruk
+Practical project "Pulse"
+
+Author: Dmitriy Mushtruk
+
 Contact: dima.mushtruk@gmail.com
           
