@@ -1,11 +1,57 @@
-@media ( max-width: 1200px )
+@media screen and ( max-width: 768px )
     .promo
-        background-size: cover
-        background-position: center center
-    .header
-        &__logo
-            width: 40%
-            display: block
+         background-position: center center   
+         background-repeat: no-repeat 
+         background-attachment: fixed    
+         background-size: cover
+         .header
+             flex-direction: column
+             &__logo
+                 padding: 15px 0 25px 0
+                 width: 40%
+             &__contacts
+                 a
+                    font-size: 24px
+                    opacity: 0.85
+                    text-align: center
+                 .button
+                    width: 100%
+                    margin-top: 6px
+                    height: 60px
+                    font-size: 15px
+                    font-weight: 600
+                    opacity: 0.89   
+             &__official
+                 display: none
+         &__wrapper
+             align-items: center
+         &__header
+             font-size: 42px
+             margin: 0 auto
+    .advantages
+        &__icons
+            display: inline-table
+            text-align: center
             margin: 0 auto
-    
-    
+            padding-left: 30%
+        &__icon
+            width: 60%
+            padding-top: 50px
+            font-size: 20px
+            hr 
+                display: block
+                height: 1px
+                border: 0
+                border-top: 1px solid $main_color
+                margin: 1em 0
+                padding: 0
+            img
+                display: block
+                width: 30%
+            span
+                font-size:30px
+                padding: 30px 0 0 0
+
+        h2
+            font-size: 38px
+            padding-bottom: 20px
