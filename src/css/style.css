@@ -156,6 +156,18 @@
   font-size: 30px;
 }
 
+@media (max-width: 1200px) {
+  .promo {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .header__logo {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  }
+}
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
