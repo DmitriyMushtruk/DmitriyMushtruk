@@ -1,0 +1,42 @@
+.overlay
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    background-color: rgba(0, 0, 0, .56)
+
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 382px
+    max-height: 402px
+    background: #F2F2F2
+    padding: 38px 40px 40px 40px
+    &__close
+        position: absolute
+        top: -18px
+        right: -40px
+        font-size:50px
+        color: $main_color
+        cursor: pointer
+        &:hover
+            color: #fff
+    &__subtittle
+        font-weight: bold
+        font-size: 19px
+        line-height: 19px
+        text-align: center
+        color: #0D0D0D
+        margin-bottom: 10px
+    &__descr
+        font-weight: bold
+        font-size: 14px
+        line-height: 14px
+        text-align: center
+        color: #0D0D0D
+
+#consultation, #order, #thanks
+    display: none
