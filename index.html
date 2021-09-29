@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/slick.css">
+    <link rel="stylesheet" href="./src/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Document</title>
 </head>
@@ -76,8 +78,8 @@
 
                 </div>
 
-                <div class="advantages__icon">
-                    <img src="./src/icons/heart.png" alt="heart with pulse">
+                <div class="advantages__icon ">
+                    <img class="advantages__icon_animated" src="./src/icons/heart.png" alt="heart with pulse">
                     <span>Заботимся о здоровье</span><br>
                     Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
                     Вашему здоровью и были в радость Вам и Вашим близким!
@@ -114,7 +116,7 @@
 
                 <input name="name" required placeholder="Ваше имя" type="text">
                 
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input class="phone" name="phone" required placeholder="Ваш телефон" type="number">
                 
                 <input name="email" required placeholder="Ваш e-mail" type="email">
 
@@ -148,12 +150,12 @@
 
                 <h2 class="tittle">Каталог пульсометров</h2>
                     <ul class="catalog__tabs">
-                        <li class="catalog__tab"><div>Для фитнеса</div></li>
+                        <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
                         <li class="catalog__tab"><div>Для бега</div></li>
                         <li class="catalog__tab"><div>Для триатлона</div></li>
                     </ul>
 
-            <div class="catalog__content">
+            <div class="catalog__content catalog__content_active">
 
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
@@ -461,7 +463,7 @@
             <h2 class="tittle">отзывы клиентов</h2>
 
             <div class="rewiwes_items">
-                <div class="rewiwes__item">
+                <div class="rewiwes__item wow animate__animated animate__fadeInUp">
                     <img src="/src/img/client_irina.png" alt="client_irina">                    
 
                     <div class="rewiwew">
@@ -474,7 +476,7 @@
                     </div>
 
                 </div>
-                <div class="rewiwes__item">
+                <div class="rewiwes__item wow animate__animated animate__fadeInUp">
                     <img src="/src/img/client_ivan.png" alt="client_ivan">                
 
                     <div class="rewiwew">
@@ -488,7 +490,7 @@
                     </div>
 
                 </div>
-                <div class="rewiwes__item">
+                <div class="rewiwes__item wow animate__animated animate__fadeInUp">
                     <img src="/src/img/client_iylia.png" alt="client_iylia">
 
                     <div class="rewiwew">
@@ -589,7 +591,10 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="src/js/slick.min.js"></script>
+    <script src="src/js/jquery.maskedinput.js"></script>
     <script src="src/js/jquery.validate.min.js" ></script>
+    <script src="src/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
     <script src="src/js/script.js"></script>
     
 </body>
